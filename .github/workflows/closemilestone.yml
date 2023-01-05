@@ -14,3 +14,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.MY_KEY }}
         OUTPUT_FOLDER: temp_release_notes
         USE_MILESTONE_TITLE: "true"
+    # Commit and push config file
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.MY_KEY }}
+  
